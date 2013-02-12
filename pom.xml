@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>cl.anibal.multi</groupId>
+    <artifactId>mvn_multi</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>Tarea 2 multi</name>
+    <url>http://maven.apache.org</url>
+    <modules>
+        <module>mvn-mobile</module>
+        <module>mvn-pc</module>
+    </modules>
+    
+    <properties>
+        <!--dependencies 01/02/2013-->
+        <junit.version>4.11</junit.version>
+        <jsf.version>2.1.17</jsf.version>
+        <myfaces.version>2.1.10</myfaces.version>
+        <!--<myfaces.tomahawk.version>1.1.14</myfaces.tomahawk.version>-->
+        <primefaces.version>3.4.2</primefaces.version>
+        <primefaces-mobile.version>0.9.3</primefaces-mobile.version>
+        <spring.version>3.2.1.RELEASE</spring.version>
+        <!--<spring-security.version>3.1.3.RELEASE</spring-security.version>-->
+        <!--<log4j.version>1.2.17</log4j.version>-->
+        <commons-io.version>2.4</commons-io.version>
+        <commons-lang.version>2.6</commons-lang.version>
+    </properties>
+        
+    <repositories>
+        <repository>
+            <id>prime-repo</id>
+            <name>PrimeFaces Maven Repository</name>
+            <url>http://repository.primefaces.org</url>
+            <layout>default</layout>
+        </repository>
+    </repositories>
+    
+    <dependencies>    
+        
+        <!--junit-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        
+        <!-- JSF -->
+        <dependency>
+            <groupId>org.glassfish</groupId>
+            <artifactId>javax.faces</artifactId>
+            <version>${jsf.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        
+        <!--        myfaces
+        <dependency>
+            <groupId>org.apache.myfaces.core</groupId>
+            <artifactId>myfaces-api</artifactId>
+            <version>${myfaces.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.myfaces.core</groupId>
+            <artifactId>myfaces-impl</artifactId>
+            <version>${myfaces.version}</version>
+        </dependency>
+                <dependency>
+            <groupId>org.apache.myfaces.tomahawk</groupId>
+            <artifactId>tomahawk</artifactId>
+            <version>${myfaces.tomahawk.version}</version>
+        </dependency>-->
+        
+        <!--primefaces-->
+        <dependency>
+            <groupId>org.primefaces</groupId>
+            <artifactId>primefaces</artifactId>
+            <version>${primefaces.version}</version>
+        </dependency>
+        
+        <!--primefaces-mobile-->
+        <dependency>  
+            <groupId>org.primefaces</groupId>  
+            <artifactId>primefaces-mobile</artifactId>  
+            <version>${primefaces-mobile.version}</version>  
+        </dependency> 
+        
+        <!--spring-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+ 
+        <!--spring security -->
+        <!--        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+            <version>${spring-security.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>${spring-security.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>${spring-security.version}</version>
+        </dependency>-->
+        
+        <!--log4j-->
+        <!--        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${log4j.version}</version>
+            <type>jar</type>
+        </dependency>-->
+        
+        <!--commons-io-->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${commons-io.version}</version>
+            <type>jar</type>
+        </dependency>
+        
+        <!--commons-lang-->
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>${commons-lang.version}</version>
+            <type>jar</type>
+        </dependency>
+    
+    </dependencies>
+</project>

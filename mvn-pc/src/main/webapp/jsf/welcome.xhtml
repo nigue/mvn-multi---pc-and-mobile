@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>mvn multi - pc</title>
+    </h:head>
+    <h:body>
+        <div align="center">
+            <h1 class="title ui-widget-header ui-corner-all">
+                mvn multi - pc
+            </h1>
+        </div>
+        <p:panel header="Formulario de muestra">
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="Input: "
+                                   for="input"/>
+                    <p:inputText value=""
+                                 required="true"
+                                 requiredMessage="this input can't be null"
+                                 id="input"/>
+                    <p:commandButton action="asdf"
+                                     value="Submit"/>
+                    <p:messages showDetail="true"
+                                autoUpdate="true"/>
+                </h:panelGrid>
+            </h:form>
+        </p:panel>
+
+        <p:panel header="Datos a traves de Spring">
+            asdf
+            ${testBean.cuenta}
+            ${testBean.edad}
+            ${testBean.nombre}
+        </p:panel>
+    </h:body>
+</html>
+
